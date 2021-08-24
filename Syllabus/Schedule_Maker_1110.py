@@ -4,22 +4,16 @@ import calendar
 import numpy as np
 
 #  Change these values to generate a new course schedule
-year = 2020
+year = 2021
 # Format is [month, day]
-start = [1,9]
-end = [4,17]
+start = [9,8]
+end = [12,13]
 
 # 0-M, 1-T, 2-W, 3-R, 4-F, 5-S, 6-S
-Days = [1,3]
+Days = [0,2,4]
 
 # Format is (month, day): 'Holiday Name'
-Holidays = {(9, 2): 'Labor Day',
-            (10, 21): 'Fall Break',
-            (10, 22): 'Fall Break',
-            (11, 27): 'Thanksgiving Break',
-            (11, 28): 'Thanksgiving Break',
-            (11, 29): 'Thanksgiving Break'
-            }
+
 Holidays = {(1, 20): 'Martin Luther King Day',
             (2, 17): "President's Day",
             (3, 16): 'Spring Break',
@@ -28,6 +22,10 @@ Holidays = {(1, 20): 'Martin Luther King Day',
             (3, 19): 'Spring Break',
             (3, 20): 'Spring Break',
             (4, 1): 'Festival of Excellence'
+            }
+Holidays = {(11, 24): 'Thanksgiving Break',
+            (11, 25): 'Thanksgiving Break',
+            (11, 26): 'Thanksgiving Break'
             }
 # Format is ['title', 'chapter', length] for topics
 # Format is ['Exam #'] for midterm exams
@@ -40,6 +38,7 @@ Topics = [['Chemistry: The Central Science', '1.1--1.2', 0.75],
           ['Atoms, Elements, and Isotopes', '2.1--2.3', 1],
           ['Atomic Weight, Periodic Table, and Atomic Structure', '2.4--2.6', 0.75],
           ['Electron Configuration', '2.7--2.9', 0.75],
+          ['Review/Make-up Day'],
           #['Midterm Exam 1 (Ch. 1--2)'],
           ['Ions and Ionic Bonds', '3.1--3.4', 0.75],
           ['Ionic Compounds', '3.5--3.7', 0.75],
@@ -48,12 +47,14 @@ Topics = [['Chemistry: The Central Science', '1.1--1.2', 0.75],
           ['Covalent Bonds and Molecules', '4.4--4.7', 0.75],
           ['Molecular Structure', '4.8--4.9', 0.75],
           ['Polarity and Binary Molecular Compounds', '4.10--4.11', 0.75],
+          ['Review/Make-up Day'],
           #['Midterm Exam 2 (Ch. 3--4)'],
           ['Balancing Chemical Reactions', '5.1--5.3', 0.75],
           ['Classes of Chemical Reactions', '5.4--5.6', 0.75],
           ['Redox Reactions', '5.7--5.8', 1],
           ['Chemical Calculations I', '6.1--6.3', 1],
           ['Chemical Calculations II', '6.4--6.5', 1],
+          ['Review/Make-up Day'],
           #['Midterm Exam 3 (Ch. 5--6)'],
           ['Chemical Reactions: Energy and Rates', '7.1--7.3', 0.75],
           ['Chemical Reactions: Equilibrium', '7.4--7.6', 0.75],
@@ -65,12 +66,14 @@ Topics = [['Chemistry: The Central Science', '1.1--1.2', 0.75],
           ['Solutions', '9.1--9.4', 1],
           ['Solubility and Dilution', '9.5--9.9', 1],
           ['Ions in Solution: Electrolytes', '9.10--9.13', 1],
+          ['Review/Make-up Day'],
           #['Midterm Exam 4 (Ch. 7--9)'],
           ['Acids and Bases', '10.1--10.5', 1],
           ['Acids and Bases -- Calculations', '10.6--10.10', 1],
           ['Buffers and Titrations', '10.11--10.14', 1],
           ['Nuclear Chemistry', '11.1--11.5', 0.75],
           ['Nuclear Chemistry and Radiation', '11.6--11.11', 0.75],
+          ['Review/Make-up Day'],
           ]
 
 Day_Letters = ['M', 'T', 'W', 'R', 'F', 'S', 'S']
