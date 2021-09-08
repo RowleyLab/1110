@@ -1,22 +1,25 @@
-\ProvidesPackage{NotesStyle}
+\ProvidesPackage{ExamStyle}
 
 %Graphics packages
 \usepackage{graphicx}
 \usepackage[verbose]{wrapfig}
-\graphicspath{ {images/} }
+%\usepackage{caption}
+%\usepackage{pstricks}
 \usepackage[fleqn]{amsmath}
-\usepackage{units}
-\usepackage{cancel}
+%\usepackage{units}
+\usepackage{pdfpages}
+
 
 %Bibliography management packages
-\usepackage[super,comma,sort&compress]{natbib}
+%\usepackage[super,comma,sort&compress]{natbib}
 %\usepackage[sorting=none]{biblatex}
-\bibliographystyle{acs}
+%\bibliographystyle{acs}
 %\addbibresource{chapters/Bibliography.bib}
-\usepackage{breakcites}
+%\usepackage{breakcites}
 
-\usepackage[colorinlistoftodos]{todonotes}
-
+%\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{enumitem}
+\setenumerate{label=a)}
 
 % font package for XeLaTex
 \RequireXeTeX
@@ -24,23 +27,25 @@
 %\usepackage{unicode-math}
 \setmainfont[Ligatures=TeX]{Brill}
 %\setsansfont{Calibri}
+%\setsansfont{Liberation Sans}
 %\setmonofont{Source Code Pro}
+%\setmonofont{Liberation Mono}
 \usepackage{bm}
 
 % Fine-tune the XeLaTeX logo for the Brill font
-\usepackage{metalogo}
-\setlogokern{Xe}{-0.050em}
-\setlogokern{eL}{-0.065em}
-\setlogokern{La}{-0.170em}
-\setlogokern{aT}{-0.090em}
-\setlogokern{Te}{-0.090em}
-\setlogokern{eX}{-0.050em}
-\setlogodrop{0.135em}
+%\usepackage{metalogo}
+%\setlogokern{Xe}{-0.050em}
+%\setlogokern{eL}{-0.065em}
+%\setlogokern{La}{-0.170em}
+%\setlogokern{aT}{-0.090em}
+%\setlogokern{Te}{-0.090em}
+%\setlogokern{eX}{-0.050em}
+%\setlogodrop{0.135em}
 
 %improve the look of tables
 \usepackage{booktabs,multirow}
-\renewcommand{\arraystretch}{1.5}
-\renewcommand{\tabcolsep}{0.3cm}
+\renewcommand{\arraystretch}{1.75}
+\renewcommand{\tabcolsep}{0.4cm}
 
 %Set the footnotes to have symbols rather than numbers
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
@@ -60,8 +65,8 @@
 \usepackage{chemmacros}
 
 %Help Typset computer code
-\usepackage{fancyvrb}
-\usepackage{color}
+%\usepackage{fancyvrb}
+%\usepackage{color}
 
 %\definecolor{darkblue}{rgb}{0,0,.6}
 %\definecolor{darkred}{rgb}{.7,0,0}
@@ -72,11 +77,11 @@
 %\usepackage{hypcap}
 % Define a macro \Autoref like \autoref but with a forced capital letter
 % Note that Figures, Equations, and Tables have a capital letter anyway.
-\newcommand{\Autoref}[1]{\def\sectionautorefname{Section}
-                         \def\chapterautorefname{Chapter}
-                         \autoref{#1}
-                         \def\sectionautorefname{section}
-                         \def\chapterautorefname{chapter}}
+%\newcommand{\Autoref}[1]{\def\sectionautorefname{Section}
+%                         \def\chapterautorefname{Chapter}
+%                         \autoref{#1}
+%                         \def\sectionautorefname{section}
+%                         \def\chapterautorefname{chapter}}
 
 % Set sizes of margins and figures
 \usepackage[margin=1in]{geometry}
@@ -97,12 +102,6 @@
 \newcommand{\ketbra}[2]{\left| #1 \vphantom{#2} \right>
  \left< #2 \vphantom{#1} \right|} % for Dirac matrix elements
 
-% A command to make a standard state symbol (horizontal crossed circle)
-\newcommand{\std}{\ooalign{\hidewidth $\circ$\hidewidth\cr\rule[0.57ex]{1.37ex}{0.5pt}}}
-
-% A command to generate an inexact differential character
-\def\dbar{{\mathchar'26\mkern-11.5mu \mathrm{d}}}
-
 % Fix the deprecated \bf command used by bibtex
 \renewcommand{\bf}{\textbf}
 
@@ -115,12 +114,8 @@
 \pagestyle{plain} 
 \usepackage{nth}
 
-% Make the section headings smaller
-\setsecheadstyle{\large\bfseries}
+\usepackage{tikz}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+		\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
 
-\usepackage[linewidth=1pt]{mdframed}
-\usepackage{lipsum}
-
-% Make the bullets on itemized lists not be a `-`
-\renewcommand{\labelitemi}{$\circ$}
-\renewcommand{\labelitemii}{\textbullet}
+\usepackage{mdframed}

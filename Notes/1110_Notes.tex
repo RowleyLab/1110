@@ -14,8 +14,9 @@
 	\item Introductory Quiz
 	\item Grading details
 	\begin{itemize}
-		\item Exams - 40, Final - 15, Quizzes - 15, Homework - 30
-		\item Online homework
+		\item Exams - 40, Final - 15, Quizzes - 15, Achieve Homework - 15, Textbook Homework - 15
+		\item Online Homework
+		\item Textbook Homework
 		\item Daily quizzes
 	\end{itemize}
 	\item Importance of reading and learning on your own
@@ -23,12 +24,12 @@
 	\begin{itemize}
 		\item My Office Hours
 		\item PAL group
-		\item Tutoring services - \href{https://www.suu.edu/academicsuccess/tutoring/}{https://www.suu.edu/academicsuccess/tutoring/}
+		\item Tutoring services - https://www.suu.edu/academicsuccess/tutoring/
 	\end{itemize}
 	\item Show how to access Canvas
 	\begin{itemize}
 		\item Calendar, Grades, Modules, etc.
-		\item Sapling Homework
+		\item Achieve Homework
 		\item Zoom, etc.
 	\end{itemize}	
 \end{itemize}
@@ -36,14 +37,14 @@
 \chapter{Matter and Measurements}
 \section{Chemistry: The Central Science}
 \begin{itemize}
+	\item My demos (Ruby, Periodic Table, NaAc hand warmers, Electroplating)
 	\item Chemistry is the ``Central Science'' because it ties in to other disciplines
 	\item Figure 1.1 -- Web of disciplines
 	\item Physical and chemical properties
 	\item Physical and chemical changes
 		\begin{itemize}
 			\item Pop balloon vs explode balloon
-		\end{itemize}
-	
+		\end{itemize}	
 \end{itemize}
 
 \section{States of Matter}
@@ -65,16 +66,16 @@
 
 \section{Chemical Elements and Symbols}
 \begin{itemize}
-	\item Elements are given names and symbols
+	\item Elements are given names and symbols (Some, like Fe, don't match)
 	\item Table 1.2 -- Names and symbols of common elements
-	\item Chemical formulas
+	\item Chemical formulas -- Type and amount of each element in a compound
 \end{itemize}
 
 \section{Elements and the Periodic Table}
 \begin{itemize}
-	\item Metals, non-metals, and metalloids
+	\item Metals, non-metals, and metalloids (There are further divisions we will get to later)
 	\item Table 1.4 -- Elements essential to human life
-	\item Practice Problems
+	\item Homework 1.1:
 	\begin{itemize}
 		\item 1.38 -- Physical vs. Chemical changes
 		\item 1.41 -- Changes of state
@@ -88,29 +89,45 @@
 
 \section{Chemical Reactions: An Example of Chemical Change}
 \begin{itemize}
-	\item Copper wire in silver nitrate solution
+	\item Demo: Zinc in copper nitrate solution
 \end{itemize}
 
 \section{Physical Quantities}
 \begin{itemize}
 	\item Physical quantities are things that can be measured or calculated
-	\item SI units
-	\item Metric prefixes and $10^n$ conversions
+	\item SI units (Table 1.5)
+	\item Metric prefixes and $10^n$ conversions (Table 1.6)
+	\begin{itemize}		
+		\item Each prefix is a multiplication operation
+		\item Why would you use prefixes?
+		\item $100m$, $0.1km$, and $10,000cm$
+	\end{itemize}
 	\item Derived units
-	\item $B_e = \dfrac{h}{8\pi^2\mu R_e^2c}$
+	\begin{itemize}
+		\item Squared and cubed units ($cm^3$)
+		\item Combined units ($\nicefrac{m}{s}$)
+	\end{itemize}
+	\item Using units to check your formulas: $B_e = \dfrac{h}{8\pi^2\mu R_e^2c}=cm^{-1}$
 \end{itemize}
 
 \section{Measuring Mass, Length, and Volume}
 \begin{itemize}
 	\item Weight vs mass
-	\item g vs kg
-	\item Standards and definitions 
+	\item kg (SI unit) vs g (More convenient in the lab)
+	\item SI vs other systems (Tables 1.7, 1.8, and 1.9)
 \end{itemize}
 
 \section{Measurement and Significant Figures}
 \begin{itemize}
 	\item Accuracy in measurements
-	\item Statistics in many measurements, simple rules for one measurement
+	\item Statistics ($\sigma$) in many measurements, simple rules for one measurement
+	\item Consider my height: $6ft$ vs $74in$ vs $73.784672in$
+	\begin{itemize}
+		\item More digits implies a more precise measurement
+		\item The first one is correct, if we allow that it is just approximate
+		\item The last one is only appropriate if I was \emph{actually} measured to the millionth of an inch
+		\item If I were precisely $6ft$ (with high precision), how would I write that? ($6.000ft$)
+	\end{itemize} 
 	\item Significant figures
 	\begin{itemize}
 		\item Zeros in the middle of two numbers are significant
@@ -118,60 +135,112 @@
 		\item Zeros at the end of a number \emph{after} the decimal point are significant
 		\item Zeros at the end of a number \emph{before} the decimal point are not significant
 	\end{itemize}	
+	\item We should keep track of the total number of significant figures, and the position of the \emph{least} significant figure in a number
+	\item Sig-fig practice: Give \# of SFs and LSD position for several numbers
 \end{itemize}
 
 \section{Scientific Notation}
 \begin{itemize}
 	\item Expressing numbers in scientific notation
+	\begin{itemize}
+		\item Split the number into \emph{quantity} and \emph{magnitude}
+		\item Express the quantity as a number with MSD in the ones place
+		\item Express the magnitude as a power of $10$
+	\end{itemize}
+	\item Scientific notation serves two purposes:
+	\begin{itemize}
+		\item It allows for easy expression of very large and very small numbers
+		\item It makes it easy to express precision (every $0$ in scientific notation is significant)
+		\item Consider $2,300kg$ measured to $\pm1kg$ ($2.300\times10^3g$)
+	\end{itemize}
 	\item Scientific notation and metric prefixes
+	\begin{itemize}
+		\item For metric to scientific: ($23.6kg\rightarrow2.36\times10^4g$)
+		
+		First convert the metric prefix to a power of 10, then shift the decimal of the quantity to put its MSD in the ones place
+		\item For scientific to metric: ($5.60\times10^{-7}m\rightarrow560nm$)
+		
+		First shift the decimal to make the power of 10 match a prefix, then replace that power of 10 with the prefix
+	\end{itemize}
 \end{itemize}
 
 \section{Rounding off Numbers}
 \begin{itemize}
 	\item Error analysis for addition and subtraction
+	\begin{itemize}
+		\item The LSD of the answer will match the LSD of the least precise input
+		\item \# of SFs doesn't matter, and the answer might gain or lose SFs compared to the inputs 
+		\item Practice: $96g+43g=139g$ \hspace{1em}and\hspace{1em} $23.4g-18.6g=4.8g$
+		\item Consider adding $1.00\mu l$ of water to a $8L$ Home Depot bucket -- The precision of the final amount is entirely determined by the low precision of the bucket 
+	\end{itemize}
 	\item Error analysis for multiplication and division
-	\item Dealing with 5 -- me vs book
+	\begin{itemize}
+		\item The \# of SFs in the answer will match the smallest \# of SFs from the inputs
+		\item Here, place value does not matter at all
+		\item Practice: $45.7g \div 8.2cm^3 = 5.6\nicefrac{g}{cm^3}$ \hspace{1em}and\hspace{1em} $82.5\nicefrac{miles}{hour}\times53.24hours=4,390miles$
+	\end{itemize}
+	\item Compound problems
+	\begin{itemize}
+		\item Solve compound problems step-by-step, writing the intermediate answers
+		\item For each intermediate answer, keep track of the \# of SFs and LSD position
+		\item Only round the final answer, don't round intermediates
+		\item Practice: $\frac{12.3g+34g}{12.0cm^3+7.7cm^3}=2.4\nicefrac{g}{cm^3}$ (wrong answer with premature rounding)
+	\end{itemize}
 \end{itemize}
 
 \section{Problem Solving: Unit Conversions and Estimating Answers}
 \begin{itemize}
 	\item Conversion factors
-	\item Dimensional analysis
-	\item My figure on dimensional analysis
-	\newpage
-	\item Practice Problems
+	\begin{itemize}
+		\item Rearrange conversion equation to make unity ratios: $1=\frac{1in}{2.54cm}=\frac{2.54cm}{1in}$
+		\item Multiply a number by the right ratio to cancel out the starting units and leave the converted units
+		\item ``Do I multiply or divide by the conversion factor?'' is the wrong question. You are always multiplying by a ratio. The right question is ``Where should the units be in my conversion factor?'' The numbers go along with the units
+		\item Most conversion factors have ``$1$'' with infinite significant figures, and the other number limits SFs in a calculation
+		\item Some conversions are defined as \emph{perfect} (such as $60s=1min$) and won't limit SFs at all
+		\item Take care to square or cube the first-power ratio for square or cubed dimensions: 
+		
+		$1^3in^3=1in^3=\left(2.54\right)^3cm^3=16.4cm^3$
+	\end{itemize}
+	\item Dimensional analysis is a method which frames any problem (even complex ones) in terms of multiple unit conversions
+	\begin{itemize}
+		\item The railroad ties or picket fence method makes it easy to organize a problem
+		\item Set up all the unit conversions before doing any calculations
+		\item Sort out significant figures at the end
+		\item Practice: $\frac{65.3miles}{h}\left|\frac{1h}{60min}\right|\frac{1min}{60s}\left|\frac{1.61km}{1mile}\right|\frac{1000m}{1km}=28.4\nicefrac{m}{s}$
+	\end{itemize}
+	\item Homework 1.2:
 	\begin{itemize}
 		\item 1.60 -- Units and metric prefixes
 		\item 1.64 -- Scientific Notation
 		\item 1.66 -- Counting Significant Figures
 		\item 1.70 -- +- error propogation
-		\item 1.71 -- */ error propogation
-	
+		\item 1.71 -- */ error propogation	
 	\end{itemize}
 \end{itemize}
 
 \section{Temperature, Heat, and Energy}
 \begin{itemize}
 	\item All chemical reactions involve a change in energy
-	\item Energy is the capacity to do heat or work. It is in units of J
+	\item Energy is the capacity to supply heat or do work. It is in units of J
 	\item Temperature is the measure of heat energy in an object
 	\begin{itemize}
-		\item We don't use F
+		\item We don't use F (Booooooo, Fahrenheit!)
 		\item $^\circ$C is split so that $0^\circ$C is freezing and $100^\circ$C is boiling
 		\item Absolute temperature, K, has spacing equal to $^\circ$C, but starts at absolute 0
+		\item $T( ^\circ C) = T(K)-273.15$
 	\end{itemize}
-	\item The energy needed to raise the temperature of a substance is its heat capacity
-	\item $1~cal=4.184~J$, based on the heat capacity of water: $4.184\nicefrac{J}{gK}$
-	\item $q=mC\Delta T$
+	\item The energy needed to raise the temperature of a substance is its specific heat (Table 1.10)	
+	\item $1cal=4.184J$, based on the heat capacity of water: $4.184\nicefrac{J}{gK}$
+	\item $q=mC\Delta T$ (practice problems with $q$ or $\Delta T$ as the unknown)
 \end{itemize}
 \section{Density and Specific Gravity}
 \begin{itemize}
-	\item $density=\dfrac{mass}{volume}$
-	\item Density can be affected by temperature changes. Water exhibits anomalous behavior in this respect
+	\item $density=\dfrac{mass}{volume}$ (Table 1.11), and can be used to convert mass and volume 
+	\item Density can be affected by temperature changes and phase changes. Water exhibits anomalous behavior in this respect
 	\item Specific gravity relates the density of a substance to the density of water
-	\item Practice Problems
+	\item Homework 1.3:
 	\begin{itemize}
-		\item 1.82 -- Scientific notation word problem
+		\item 1.82 -- Dimensional analysis word problem
 		\item 1.85 -- Heat transfer equation
 		\item 1.92 -- Density measurement
 	\end{itemize}
@@ -189,7 +258,7 @@
 		\item Chemical reactions change the way that atoms are combined in compounds, but leave the atoms themselves unchanged
 	\end{itemize}
 	\item Today we know that atoms are very small ($m=10^{-23}g$ and $r=10^{-10}m$)
-	\item Atomic mass unit -- \ch{^{12}C} has a mass of \emph{exactly} $12~amu$
+	\item Atomic mass unit -- \ch{^{12}C} has a mass of \emph{exactly} $12amu$
 	\item Subatomic particles and their interactions
 	\item Atomic structure -- Nucleus and empty space
 \end{itemize}
@@ -205,8 +274,8 @@
 	\item Atomic symbols: \ch{^{3}_{1}H}
 	\item Hydrogen, deuterium, and tritium
 	\item Atomic weight -- Based on natural abundances of the isotopes
-	\item \ch{^6Li}: $7.59\%$ abundance and $m=6.015122~amu$. \ch{^7Li}: $92.41\%$ abundance and $m=7.016004~amu$
-	\item Practice Problems
+	\item \ch{^6Li}: $7.59\%$ abundance and $m=6.015122amu$. \ch{^7Li}: $92.41\%$ abundance and $m=7.016004amu$
+	\item Homework 2.1:
 	\begin{itemize}
 		\item 2.35 -- How elements differ from each other
 		\item 2.48 -- Atomic symbols and isotopes
@@ -588,9 +657,9 @@
 \section{The Mole and Avogadro's Number}
 \begin{itemize}
 	\item The molecular weight or formula weight of a substance is the sum of atomic weights for its constituent atoms
-	\item Different substances have different molecular weights, so $1.0~g$ of \ch{C2H4} has more molecules in it than $1.0~g$ of \ch{HCl}
+	\item Different substances have different molecular weights, so $1.0g$ of \ch{C2H4} has more molecules in it than $1.0g$ of \ch{HCl}
 	\item If we wanted to make \ch{C2H5Cl} without any left-over reactants, then we would need more grams of \ch{HCl} than of \ch{C2H4}
-	\item Find the ratio by comparing the formula masses ($28.0~amu$ vs $36.5~amu$). If I have $1.0~g$ of \ch{C2H4}, how many grams of \ch{HCl} do I need? ($1.3~g$)
+	\item Find the ratio by comparing the formula masses ($28.0amu$ vs $36.5amu$). If I have $1.0g$ of \ch{C2H4}, how many grams of \ch{HCl} do I need? ($1.3g$)
 	\item The mole is an amount that relates amus (atomic scale) to grams (macroscopic scale)
 	\item The molar mass tells how many grams of a substance is one mole of molecules
 	\item $N_A=6.022\times10^{23}$, Avogadro's number, is the number of amus per gram
@@ -598,7 +667,7 @@
 \section{Gram-Mole Conversions}
 \begin{itemize}
 	\item We can convert from grams to moles and vice-versa using the molar mass
-	\item How many moles is $2.5~g$ of \ch{C2H5Cl}? How many molecules?
+	\item How many moles is $2.5g$ of \ch{C2H5Cl}? How many molecules?
 \end{itemize}
 
 \section{Mole Relationships and Chemical Equations}
@@ -621,7 +690,7 @@
 	\item You should always check your calculated answer against a rough estimate to make sure it makes sense
 	\item For \ch{H2SO4(aq) + 2 NaOH(aq) -> Na2SO4(aq) + 2 H2O(aq)}:
 	\begin{itemize}
-		\item How many  moles of \ch{NaOH} needed to react with $0.490~g$ \ch{H2SO4}?
+		\item How many  moles of \ch{NaOH} needed to react with $0.490g$ \ch{H2SO4}?
 		\item How many grams of water and sodium sulfate would be produced?
 	\end{itemize}
 \end{itemize}
@@ -634,14 +703,14 @@
 	$\% Yield = \dfrac{Actual Yield}{Theoretical Yield}\times 100\%$
 		\item \ch{CO2 + H2O -> C6H12O6 + O2} (unbalanced)
 	
-	With $10.0~g$ of \ch{CO2} and $5.00~g$ of \ch{H2O}, how many grams of sugar are produced?
-	\item if $4.8~g$ of sugar are actually recovered, what is the \% recovery?
+	With $10.0g$ of \ch{CO2} and $5.00g$ of \ch{H2O}, how many grams of sugar are produced?
+	\item if $4.8g$ of sugar are actually recovered, what is the \% recovery?
 	
 	\item \ch{C6H8O7 + NaHCO3 -> Na3C6H5O7 + H2O + CO2} (unbalanced)
 	
-	With $1.0~g$ citric acid and $1.0~g$ sodium bicarbonate how many grams of \ch{Na3C6H5O7} are produced?
+	With $1.0g$ citric acid and $1.0g$ sodium bicarbonate how many grams of \ch{Na3C6H5O7} are produced?
 	
-	\item You actually recover $0.56~g$ of citrate. What is the \% yield?
+	\item You actually recover $0.56g$ of citrate. What is the \% yield?
 	\item Practice Problems
 	\begin{itemize}
 		\item 6.46 -- Finding reactant amounts from desired product yield 
@@ -817,7 +886,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item Pressure is the force a gas applies over an area
 	\item Even ambient air is exerting a fairly high pressure -- atmospheric pressure
 	\item We measure ambient pressure using a mercury barometer -- Figure 8.9
-	\item Pressure can be measured in many different units: $1~atm=760~mmHg=760~torr=14.7~psi=101325~Pa$
+	\item Pressure can be measured in many different units: $1atm=760mmHg=760torr=14.7psi=101325Pa$
 \end{itemize}
 \section{Boyle's Law}
 \begin{itemize}
@@ -859,8 +928,8 @@ Some chemical reactions can be balanced, but meaningless because they will never
 \begin{itemize}
 	\item All of the above laws are for a constant (and unknown) number of moles of gas
 	\item More moles of gas will give greater volume : $\dfrac{V_1}{n_1} = \dfrac{V_2}{n_2}$
-	\item It is convenient to define a standard temperature ($0^\circ C$) and pressure ($1~atm$) or comparing different gas systems
-	\item At STP, one mole of an ideal gas occupies a standard molar volume of $22.4~L$	
+	\item It is convenient to define a standard temperature ($0^\circ C$) and pressure ($1atm$) or comparing different gas systems
+	\item At STP, one mole of an ideal gas occupies a standard molar volume of $22.4L$	
 \end{itemize}
 \section{The Ideal Gas Law}
 \begin{itemize}
@@ -868,15 +937,15 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item $R$ is the gas constant, which can take on different values depending on the units:
 	
 	$R=0.08206\dfrac{L~atm}{mol~K} = 62.4\dfrac{L~Torr}{mol~K}$
-	\item Find the pressure when $0.250~mol$ of gas are placed in a $5.20~L$ container at $15.0~^\circ C$ ($1.14~atm$)
-	\item How many moles are in a $3.15~L$ helium balloon at $20.0~^\circ C$ and $0.820~atm$? ($0.107~mol$)
+	\item Find the pressure when $0.250mol$ of gas are placed in a $5.20L$ container at $15.0^\circ C$ ($1.14atm$)
+	\item How many moles are in a $3.15L$ helium balloon at $20.0^\circ C$ and $0.820atm$? ($0.107mol$)
 \end{itemize}
 \section{Partial Pressures and Dalton's Law}
 \begin{itemize}
 	\item Since gas particles don't interact at all, a mixture of gases doesn't introduce any new complexity
 	\item Each gas exerts a partial pressure as if the other gases weren't there, and the total pressure is the sum of the partial pressures
 	\item $P_{total} = \sum P_{i, partial}$
-	\item The air is mostly made of \ch{O2} and \ch{N2}. In Cedar City, $P_{\ch{O2}}=0.17~atm$ and $P_{\ch{N2}}=0.64~atm$. What is the total barometric pressure? ($0.81~atm$)
+	\item The air is mostly made of \ch{O2} and \ch{N2}. In Cedar City, $P_{\ch{O2}}=0.17atm$ and $P_{\ch{N2}}=0.64atm$. What is the total barometric pressure? ($0.81atm$)
 	\item Practice Problems
 	\begin{itemize}
 		\item 8.62 -- Ideal gas law
@@ -889,7 +958,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item A liquid in a closed container will reach equilibrium with the vapor phase as vaporization and condensation rates come into balance (Figure 8.19)
 	\item The equilibrium pressure above a liquid is the vapor pressure
 	\item Different liquids have different vapor pressures, and vapor pressure always increases with temperature (Figure 8.20)
-	\item When the vapor pressure equals the external pressure ($\approx 1~atm$), boiling will begin
+	\item When the vapor pressure equals the external pressure ($\approx 1atm$), boiling will begin
 	\item The lower external pressure at high altitudes is why water will boil at less than $100^\circ C$ at those altitudes
 	\item Viscosity is a measure of how freely a liquid flows. Some liquids, like honey, are very viscous
 	\item Surface Tension is the resistance of a liquid to spreading out and increasing its surface area. This leads to curved droplets of liquids, since this shape minimizes surface area (Figure 8.21)
@@ -920,9 +989,9 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item Figure 8.24 shows a heating curve across two phase changes
 	\item Heat for changing temperature: $q=mC_p\Delta T$
 	\item Heat for a phase change: $q=m\Delta H_{f or v}$
-	\item $7.5~g$ of ice begin at $-6.00~^\circ C$. Find how many $J$ are required to convert this ice into steam at $125~^\circ C$ ($23,000~J$)
+	\item $7.5g$ of ice begin at $-6.00^\circ C$. Find how many $J$ are required to convert this ice into steam at $125^\circ C$ ($23,000J$)
 	
-	For water: $C_{s}=2.11~\dfrac{J}{g~^\circ C}$ \hspace{1em} $C_{l}=4.18~\dfrac{J}{g~^\circ C}$ \hspace{1em} $C_{g}=2.00~\dfrac{J}{g~^\circ C}$ \\ \hphantom{For Water:} $\Delta H_{fus} = 334~\dfrac{J}{g}$ \hspace{1em} $\Delta H_{vap} = 2260~\dfrac{J}{g}$
+	For water: $C_{s}=2.11\dfrac{J}{g~^\circ C}$ \hspace{1em} $C_{l}=4.18\dfrac{J}{g~^\circ C}$ \hspace{1em} $C_{g}=2.00\dfrac{J}{g~^\circ C}$ \\ \hphantom{For Water:} $\Delta H_{fus} = 334\dfrac{J}{g}$ \hspace{1em} $\Delta H_{vap} = 2260\dfrac{J}{g}$
 	\item Practice Problems
 	\begin{itemize}
 		\item 8.92 -- Pressure and boiling points
@@ -935,7 +1004,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 \section{Mixtures and Solutions}
 \begin{itemize}
 	\item Recall the taxonomy of mixtures from chapter 1: Heterogeneous mixtures vs homogeneous mixtures, and solutions vs colloids
-	\item The primary difference is particle size: Solutions have particles $<2~nm$, colloids have particles $2-500~nm$, and heterogeneous mixtures have particles $>500~nm$
+	\item The primary difference is particle size: Solutions have particles $<2nm$, colloids have particles $2-500nm$, and heterogeneous mixtures have particles $>500nm$
 	\item In a solution, the solvent is the dominant component while any minority components are solutes
 	\item Solutions can be more than just solid-in-liquid -- Table 9.2
 \end{itemize}
@@ -1136,8 +1205,8 @@ Some chemical reactions can be balanced, but meaningless because they will never
 \section{Acid and Base Equivalents}
 \begin{itemize}
 	\item Just like with ion equivalents, it is often convenient to talk about acids and bases in terms of how many moles of \ch{H3O^+} of \ch{OH^-} they will produce
-	\item $1~eq = \dfrac{1~mol}{\#~of~\ch{H3O^+}~or~\ch{OH^-}~ions~produced}$
-	\item $1~g-eq = \dfrac{Molar Mass}{\#~of~\ch{H3O^+}~or~\ch{OH^-}~ions~produced}$
+	\item $1eq = \dfrac{1mol}{\#~of~\ch{H3O^+}~or~\ch{OH^-}~ions~produced}$
+	\item $1g-eq = \dfrac{Molar Mass}{\#~of~\ch{H3O^+}~or~\ch{OH^-}~ions~produced}$
 	\item Since acids and bases will partition between their conjugates, we can't properly talk about Molarity without doing further calculations
 	\item What we really want is the number of equivalents in a solution. This is called the \emph{Normal Concentration} (N)
 	\item $N=\dfrac{eq}{L}$
