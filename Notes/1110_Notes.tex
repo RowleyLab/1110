@@ -258,22 +258,42 @@
 		\item Chemical reactions change the way that atoms are combined in compounds, but leave the atoms themselves unchanged
 	\end{itemize}
 	\item Today we know that atoms are very small ($m=10^{-23}g$ and $r=10^{-10}m$)
-	\item Atomic mass unit -- \ch{^{12}C} has a mass of \emph{exactly} $12amu$
-	\item Subatomic particles and their interactions
-	\item Atomic structure -- Nucleus and empty space
+	\item Atomic mass unit
+	\begin{itemize}
+		\item AMU is approximately the mass of a proton or a neutron
+		\item Electrons are very small (less than a thousandth of an AMU)
+		\item Technically, \ch{^{12}C} has a mass of \emph{exactly} $12amu$
+	\end{itemize}
+	\item Subatomic particles and their interactions (Table 2.1)
+	\item Atomic structure (Figure 2.1)
+	\begin{itemize}
+		\item The protons and neutrons make up an extremely dense nucleus
+		\item Electrons occupy the rest (more on this later)
+		\item Most of the volume of atoms is empty (well, filled only with very low mass electrons)
+	\end{itemize}
 \end{itemize}
 \section{Elements and Atomic Number}
 \begin{itemize}
 	\item Atomic number (Z) is the number of protons and it distinguishes one element from another
 	\item Neutral atoms will have the same number of electrons as protons
+	\item Charged atoms (either more or fewer electrons than protons) are called ions
 	\item Mass number (A) is the number of protons \emph{and} neutrons	
 \end{itemize}
 \section{Isotopes and Atomic Weight}
 \begin{itemize}
 	\item Atoms with the same atomic number, but different mass numbers are called isotopes
+	\item Hydrogen, deuterium, and tritium are the three named isotopes of hydrogen
 	\item Atomic symbols: \ch{^{3}_{1}H}
-	\item Hydrogen, deuterium, and tritium
-	\item Atomic weight -- Based on natural abundances of the isotopes
+	\begin{itemize}
+		\item The mass number is in the top-left
+		\item The atomic number (can be omitted) is in the bottom left
+		\item The charge is in the top right (omitted if neutral)
+	\end{itemize}
+	\item Atomic weight -- The non-integer number on the periodic table
+	\begin{itemize}
+		\item Atomic weight is based on the precise mass and natural abundances of the isotopes
+		\item $AW=\sum\limits_{isotopes}\left(mass\times \frac{\%~abundance}{100\%}\right)$
+	\end{itemize}
 	\item \ch{^6Li}: $7.59\%$ abundance and $m=6.015122amu$. \ch{^7Li}: $92.41\%$ abundance and $m=7.016004amu$
 	\item Homework 2.1:
 	\begin{itemize}
@@ -290,55 +310,97 @@
 	\item Mendeleev even correctly predicted the properties of Gallium, Germanium, and Scandium -- yet-undiscovered elements
 	\item Rows are called ``Periods'' and columns are called ``Groups''
 	\item The periods get longer further down due to electronic structure -- We will talk about this soon
-	\item Main group vs. transition metals vs. inner transition metals
+	\item Figure 2.2 shows two ways to divide the periodic table
+	\begin{itemize}
+		\item Main group vs. transition metals vs. inner transition metals
+		\item Metals vs. Metalloids vs. Non-metals
+	\end{itemize}
 \end{itemize}
 
 \section{Some Characteristics of Different Groups}
 \begin{itemize}
-	\item Periodic trend in atomic radius
-	\item Group 1A -- Alkali metals
-	\item Group 2A -- Alkaline earth metals
-	\item Group 7A -- Halogens
-	\item Group 8A -- Noble gases
+	\item Periodic trend in atomic radius (Figure 2.3)
+	\item Group 1A -- Alkali metals: Shiny, soft, and highly reactive
+	\item Group 2A -- Alkaline earth metals: Like Alkali, but less extreme
+	\item Group 7A -- Halogens: Colorful and corrosive in elemental form
+	\item Group 8A -- Noble gases: Won't react with anything (*almost*)
 \end{itemize}
 
 \section{Electronic Structure of Atoms}
 \begin{itemize}
 	\item Electronic structure largely determines physical and chemical properties
-	\item Electrons can only exist in quantized energy levels because of their quantum wavelike nature
-	\item The energy level of an electron can be characterized by four \emph{quantum numbers}
-	\item First is the shell number. Each shell can hold more electrons than the last
-	\item Next is the subshell -- $s$, $p$, $d$, and $f$ subshells
-	\item Orbitals make up subshells, and each orbital holds 2 electrons
-	\item Table 2.2 shows the shells and subshells
-	\item Spin differentiates the two electrons which share an orbital	
+	\item Electrons can only exist in quantized energy states because of their quantum wavelike nature
+	\item These states have different \emph{sizes} and characteristic \emph{shapes} in 3-D space. The state defines where an electron can be found, and how much energy it has
+	\item Each state of an electron can be characterized by \emph{quantum numbers}, which can be thought of as the ``address'' for a given electron
+	\begin{itemize}
+		\item First is the shell number, $n$
+		\begin{itemize}
+			\item The shell determines the energy and size of a state
+			\item Shells can hold one or more subshells
+			\item Each successive shell can hold more electrons than the last (2, 8, 18, 32)
+		\end{itemize}
+		\item  Next is the subshell number, $l$
+		\begin{itemize}
+			\item Subshells come in 4 types: $s$, $p$, $d$, and $f$
+			\item The subshell type determines the shape of the electron state
+			\item Each subshell has a different number of individual states (orbitals), and each state can contain 2 electrons
+			
+			\begin{tabular}{c|c|c|c}
+				Subshell & Shape & \# of Orbitals & Max \# of electrons \\ \midrule
+				$s$ & Sphere & $1$ & $2$ \\
+				$p$ & Dumbell & $3$ & $6$ \\
+				$d$ & Clover & $5$ & $10$ \\
+				$f$ & Complex! & $7$ & $14$
+			\end{tabular} 
+		\end{itemize}
+		\item Each successive shell adds a new subshell type (Table 2.2)
+		\item Spin differentiates the two electrons which share an orbital			
+	\end{itemize}
+	\item Draw a hydrogenic energy level diagram, and practice identifying shells and subshells
 \end{itemize}
 
 \section{Electron Configurations}
 \begin{itemize}
+	\item For multi-electron atoms, the subshells arrange themselves a bit differently
+	\begin{itemize}
+		\item The first few subshells are: $1s$, $2s$, $2p$, $3s$, $3p$, $4s$, $3d$, $4p$ (Draw the energy level diagram)
+		\item We will show a way to remember this pattern in just a few minutes
+	\end{itemize}
 	\item Electrons occupy orbitals according to the following rules:
 	\begin{itemize}
-		\item Electrons will occupy the lowest energy orbital available. This is the Aufbau principle. The ordering follows a pattern of $s$, $p$, $d$, and $f$ within a shell, but there is some crossover between shells, as shown in figure 2.6
+		\item Electrons will occupy the lowest energy orbital available. This is the Aufbau principle. 
 		\item Each orbital can hold only two electrons, which must have opposite spins. This is the Pauli exclusion principle
 		\item Degenerate groups of orbitals are all filled halfway with electrons of the same spin before any electrons are paired up. This is Hund's rule
 	\end{itemize}
+	\item To find the configuration of an element, count the number of electrons and fill the orbitals according to the three rules above
+	\item To give the configuration, list the occupied subshells in order, and their occupancy as a superscript
+	\item Practice: \ch{O:}$1s^22s^22p^4$ \hspace{2em} \ch{Si:}$1s^22s^2sp^63s^23p^2$
 	\item Table 2.3 shows electron configurations for the first 20 elements
-	\item Drawing electron configuration diagrams with harpoons for electrons
 	\item Noble gas notation
+	\begin{itemize}
+		\item For longer configurations, we can reference the noble gas which comes previous to the element
+		\item The electrons represented by that noble gas are \emph{core} electrons, and are not actually very important to bonding, ion formation etc.
+		\item The remaining electrons are in the outermost, \emph{valence} shell, and are most important to chemistry
+		\item Practice: \ch{Cl: [Ne]}$3s^23p^5$
+	\end{itemize}
 \end{itemize}
 
 \section{Electron Configurations and the Periodic Table}
 \begin{itemize}
 	\item The periodic table is arranged according to properties, but properties are governed by electronic configuration. Ergo, the periodic table is arranged according to electronic configuration!
 	\item Figure 2.7 shows how the blocks of the periodic table represent subshells in electronic structure
-	\item Core electrons vs. valence electrons
+	\item My figure includes $d(n-1)$ and $f(n-2)$ labels
+	\item Note that the width of each block matches the number of electrons each subshell type can hold
+	\item The order of the subshells can be found by simply traversing up the elements in the periodic table
+	\item Practice: \ch{Pb:[Xe]}$6s^24f^{14}5d^{10}6p^2$
 \end{itemize}
 \section{Electron Dot Symbols}
 \begin{itemize}
 	\item It is useful to graphically represent the valence electrons with electron dot symbols
 	\item Write the symbol for the element, then surround it with the correct number of dots to represent valence electrons
 	\item Dots go on the four sides of the symbol, and pair up only when there are more than 4 electrons
-	\item Practice Problems
+	\item Table 2.5 shows many of these diagrams
+	\item Homework 2.2:
 	\begin{itemize}
 		\item 2.60 -- Classify elements (metal, non-metal, main group, etc.)
 		\item 2.62 -- Reactive trends in the periodic table
@@ -401,7 +463,7 @@
 	\item An old rule uses different endings (ferrous and chromous for $2+$, and ferric and chromic for $3+$)
 	\item Anions change the end of the element name to ``-ide''
 	\item See tables 3.1 and 3.2
-	\item Practice Problems
+	\item Homework 3.1:
 	\begin{itemize}
 		\item 3.38 -- Ion formation by gaining/losing electrons
 		\item 3.46 -- Ions and the octet rule
@@ -439,7 +501,7 @@
 	\item When an acid dissolves in water, it donates a hydrogen cation to a water molecule forming \ch{H3O^+}
 	\item When a base dissolves in water, it will accept a proton from water forming \ch{OH^-}
 	\item Some acids can provide multiple \ch{H^+} in reactions (\ch{HCl}, \ch{H2SO3}, \ch{H3PO4}), and some bases can accept multiple protons (\ch{NaOH}, \ch{Ba(OH)2})
-	\item Practice Problems
+	\item Homework 3.2
 	\begin{itemize}		
 		\item 3.62 -- Polyatomic Ions
 		\item 3.66 -- Formulas from names for ionic compounds
@@ -477,7 +539,7 @@
 	\item Identify them in molecular compounds by counting the electrons and comparing them to their valency: \ch{N2O}
 	\item \ch{O3} and \ch{NH3BF3} are two more examples of coordinate covalent compounds
 	\item In acid/base chemistry, all acidic hydrogens form coordinate covalent bonds
-	\item Practice Problems
+	\item Homework 4.1:
 	\begin{itemize}
 		\item 4.36 -- Identify covalent bonds
 		\item 4.38 -- Predict \# of bonds from periodic table
@@ -529,7 +591,7 @@
 	\end{enumerate}
 	\item Bond angles can range from $180^\circ$ to $<109.5^\circ$
 	\item If lone pairs are present, they slightly reduce the bonding angles
-	\item Practice Problems
+	\item Homework 4.2:
 	\begin{itemize}
 		\item 4.54 -- Condensed structural formulas
 		\item 4.58 -- Drawing Lewis structures
@@ -558,7 +620,7 @@
 	\item When naming a binary compound, the less electronegative atom usually comes first
 	\item The second element will have an ``-ide'' ending, just like in ionic compounds
 	\item Use prefixes (Table 4.3) to indicate how many of each element are present
-	\item Practice Problems
+	\item Homework 4.3:
 	\begin{itemize}
 		\item 4.78 -- Polar bonds
 		\item 4.82 -- Polar molecules
@@ -612,7 +674,7 @@
 		\item Most other ionic compounds are not soluble
 		\item Net ionic equation omit all species which are aqueous on both sides of the reaction
 	\end{itemize}
-	\item Practice Problems
+	\item Homework 5.1
 	\begin{itemize}
 		\item 5.28 -- Balancing chemical reactions
 		\item 5.38 -- Identify reaction types
@@ -645,7 +707,7 @@
 	\item Elemental states have oxidation states of 0
 	\item For a covalently bonded compound, the oxidation states sum up to the total charge
 	\item Elements in a covalent bond will usually take the same oxidation state that they would in an ionic bond (C is an important exception, as well as non-metal oxides)
-	\item Practice Problems
+	\item Homework 5.2:
 	\begin{itemize}	
 		\item 5.39 -- Net ionic equations for acid/base reactions
 		\item 5.54 -- Labeling changes in oxidation number
@@ -675,7 +737,7 @@
 	\item A balanced chemical equation relates the ratios of moles of reactants and products
 	\item The coefficients tell how many moles are needed or produced
 	\item We call these ratios \emph{stoichiometry}
-	\item Practice Problems
+	\item Homework 6.1:
 	\begin{itemize}	
 		\item 6.32 -- Calculating molar mass
 		\item 6.36 -- Moles to mass and to molecules
@@ -711,7 +773,7 @@
 	With $1.0g$ citric acid and $1.0g$ sodium bicarbonate how many grams of \ch{Na3C6H5O7} are produced?
 	
 	\item You actually recover $0.56g$ of citrate. What is the \% yield?
-	\item Practice Problems
+	\item Homework 6.2:
 	\begin{itemize}
 		\item 6.46 -- Finding reactant amounts from desired product yield 
 		\item 6.52 -- Limiting reactant problem
@@ -765,7 +827,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item For reactions to occur, molecules must collide with enough energy and in the correct orientation (Figure 7.2)
 	\item The energy required to start a reaction is called the activation energy, and it limits the rate of reaction
 	\item Reaction coordinate diagrams can show factors which control both the energetics and the rate of a reaction(Figure 7.3)
-	\item Practice Problems
+	\item Homework 7.1:
 	\begin{itemize}
 		\item 7.30 -- Reaction enthalpies from bonds
 		\item 7.34 -- Predicting entropy changes
@@ -829,7 +891,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 		\item Increasing pressure or decreasing volume will shift the reaction toward the side with fewer moles
 		\item Decreasing the pressure increasing the volume will shift the reaction toward the side with more moles
 	\end{itemize}
-	\item Practice Problems
+	\item Homework 7.2:
 	\begin{itemize}
 		\item 7.48 -- Catalysts and activation energy
 		\item 7.56 -- Equilibrium constant
@@ -902,7 +964,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item Demo a small balloon expanding as it moves from ice to boiling water
 	\item This behavior is explained by the kinetic molecular theory of gases because the collisions are more forceful, pushing to greater volumes
 	\item Solve Charles's law problems with the following relation: $\dfrac{V_1}{T_1}=\dfrac{V_2}{T_2}$
-	\item Practice Problems
+	\item Homework 8.1:
 	\begin{itemize}
 		\item 8.34 -- Intermolecular forces
 		\item 8.42 -- Converting gas pressures
@@ -946,7 +1008,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item Each gas exerts a partial pressure as if the other gases weren't there, and the total pressure is the sum of the partial pressures
 	\item $P_{total} = \sum P_{i, partial}$
 	\item The air is mostly made of \ch{O2} and \ch{N2}. In Cedar City, $P_{\ch{O2}}=0.17atm$ and $P_{\ch{N2}}=0.64atm$. What is the total barometric pressure? ($0.81atm$)
-	\item Practice Problems
+	\item Homework 8.2:
 	\begin{itemize}
 		\item 8.62 -- Ideal gas law
 		\item 8.82 -- Ideal gas law
@@ -992,7 +1054,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item $7.5g$ of ice begin at $-6.00^\circ C$. Find how many $J$ are required to convert this ice into steam at $125^\circ C$ ($23,000J$)
 	
 	For water: $C_{s}=2.11\dfrac{J}{g~^\circ C}$ \hspace{1em} $C_{l}=4.18\dfrac{J}{g~^\circ C}$ \hspace{1em} $C_{g}=2.00\dfrac{J}{g~^\circ C}$ \\ \hphantom{For Water:} $\Delta H_{fus} = 334\dfrac{J}{g}$ \hspace{1em} $\Delta H_{vap} = 2260\dfrac{J}{g}$
-	\item Practice Problems
+	\item Homework 8.3
 	\begin{itemize}
 		\item 8.92 -- Pressure and boiling points
 		\item 8.96 -- Amorphous and crystalline solids
@@ -1054,7 +1116,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 		\item volume/volume percent -- volume of solute
 		\item mass/volume percent -- mass of solute volume of solution
 	\end{itemize}
-	\item Practice Problems
+	\item Homework 9.1:
 	\begin{itemize}
 		\item 9.38 -- Water as a solvent
 		\item 9.42 -- Henry's law
@@ -1105,7 +1167,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item Isotonic solutions match the salinity of blood cells
 	\item hypertonic solutions are more salty and will shrivel blood cells
 	\item hypotonic solutions are less salty and will swell (or lyse) blood cells
-	\item Practice Problems
+	\item Homework 9.2:
 	\begin{itemize}
 		\item 9.68 -- Dilution
 		\item 9.74 -- milliequivalents
@@ -1161,7 +1223,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item The water dissociation constant $K_w$ is very important to acid-base chemistry and has the value $[\ch{H3O^+}][\ch{OH^-}]=1.0\times10^{-14}$
 	\item In a neutral solution, $[\ch{H3O^+}] = [\ch{OH^-}] = 1.0\times10^{-7}$
 	\item As $[\ch{H3O^+}]$ goes up, $[\ch{OH^-}]$ goes down and vice-versa to obey the $K_w$ expression
-	\item Practice Problems
+	\item Homework 10.1:
 	\begin{itemize}
 		\item 10.38 -- Complete dissociation of a strong acid \todo[inline]{change me for a better problem}
 		\item 10.46 -- Identify acids and bases
@@ -1232,7 +1294,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 		\item Strong acid + strong base = neutral solution
 		\item Weak acid + weak base = ? (it depends on the specific acid/base strengths)
 	\end{itemize}
-	\item Practice Problems
+	\item Homework 10.2:
 	\begin{itemize}
 		\item 10.68 -- Rough calculations of pH
 		\item 10.70 -- pH to $\left[\ch{H3O^+}\right]$ and $\left[\ch{OH^-}\right]$ 
@@ -1318,7 +1380,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\ch{^3_2He + ^3_2He -> ^4_2He + 2 ^1_1H}
 	
 	\ch{^3_2He + ^1_1H -> ^4_2He + ^0_1e^+}
-	\item Practice Problems
+	\item Homework 11.1:
 	\begin{itemize}
 		\item 11.40 -- $\alpha$ and $\beta$ decay
 		\item 11.44 -- Predicting products of $\beta$ decay
