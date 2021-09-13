@@ -4,8 +4,6 @@
 \usepackage{graphicx}
 \usepackage[verbose]{wrapfig}
 \graphicspath{ {images/} }
-\usepackage{caption}
-\usepackage{pstricks}
 \usepackage[fleqn]{amsmath}
 \usepackage{units}
 \usepackage{cancel}
@@ -71,13 +69,7 @@
 %\definecolor{red}{rgb}{.98,0,0}
 %\usepackage[colorlinks,pagebackref,pdfusetitle,urlcolor=darkblue,citecolor=darkblue,linkcolor=black,bookmarksnumbered,plainpages=false]{hyperref}
 
-\definecolor{darkblue}{rgb}{0,0,.6}
-\definecolor{darkred}{rgb}{.7,0,0}
-\definecolor{darkgreen}{rgb}{0,.6,0}
-\definecolor{red}{rgb}{.98,0,0}
-\usepackage[colorlinks,pagebackref,pdfusetitle,urlcolor=darkblue,citecolor=darkblue,linkcolor=black,bookmarksnumbered,plainpages=false]{hyperref}
-
-\usepackage{hypcap}
+%\usepackage{hypcap}
 % Define a macro \Autoref like \autoref but with a forced capital letter
 % Note that Figures, Equations, and Tables have a capital letter anyway.
 \newcommand{\Autoref}[1]{\def\sectionautorefname{Section}
@@ -89,12 +81,6 @@
 % Set sizes of margins and figures
 \usepackage[margin=1in]{geometry}
 \newlength{\figsize}\setlength{\figsize}{.9\textwidth}
-
-% A command to make a standard state symbol (horizontal crossed circle)
-\newcommand{\std}{\ooalign{\hidewidth $\circ$\hidewidth\cr\rule[0.57ex]{1.37ex}{0.5pt}}}
-
-% A command to generate an inexact differential character
-\def\dbar{{\mathchar'26\mkern-11.5mu \mathrm{d}}}
 
 %\OnehalfSpacing
 \nonzeroparskip
@@ -110,6 +96,12 @@
  #2 \left| #3 \vphantom{#1#2} \right>} % for Dirac matrix elements
 \newcommand{\ketbra}[2]{\left| #1 \vphantom{#2} \right>
  \left< #2 \vphantom{#1} \right|} % for Dirac matrix elements
+
+% A command to make a standard state symbol (horizontal crossed circle)
+\newcommand{\std}{\ooalign{\hidewidth $\circ$\hidewidth\cr\rule[0.57ex]{1.37ex}{0.5pt}}}
+
+% A command to generate an inexact differential character
+\def\dbar{{\mathchar'26\mkern-11.5mu \mathrm{d}}}
 
 % Fix the deprecated \bf command used by bibtex
 \renewcommand{\bf}{\textbf}
