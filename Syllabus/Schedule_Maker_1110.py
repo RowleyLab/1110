@@ -4,40 +4,41 @@ import calendar
 import numpy as np
 
 #  Change these values to generate a new course schedule
-year = 2022
+year = 2023
 # Format is [month, day]
-start = [8, 31]
-end = [12, 9]
+start = [1, 9]
+end = [4, 23]
 
 # 0-M, 1-T, 2-W, 3-R, 4-F, 5-S, 6-S
 Days = [0, 2, 4]
 
 # Format is (month, day): 'Holiday Name'
 # Fall Holidays
-Holidays = {
-    (9, 5): "Labor Day",
-    (10, 17): "Fall Break",
-    (10, 18): "Fall Break",
-    (11, 21): "Thanksgiving Break",
-    (11, 22): "Thanksgiving Break",
-    (11, 23): "Thanksgiving Break",
-    (11, 24): "Thanksgiving Break",
-    (11, 25): "Thanksgiving Break",
-}
+# Holidays = {
+#     (9, 5): "Labor Day",
+#     (10, 17): "Fall Break",
+#     (10, 18): "Fall Break",
+#     (11, 21): "Thanksgiving Break",
+#     (11, 22): "Thanksgiving Break",
+#     (11, 23): "Thanksgiving Break",
+#     (11, 24): "Thanksgiving Break",
+#     (11, 25): "Thanksgiving Break",
+# }
 # Summer Holidays
 # Holidays = {(7, 3): '\\nth{4} July',
 #             (7, 24): "\\nth{24} July"
 #             }
 # Spring Holidays
-# Holidays = {(1, 17): 'Martin Luther King Day',
-#             (2, 21): "President's Day",
-#             (2, 28): 'Spring Break',
-#             (3, 1): 'Spring Break',
-#             (3, 2): 'Spring Break',
-#             (3, 3): 'Spring Break',
-#             (3, 4): 'Spring Break',
-#             (3, 30): 'Festival of Excellence'
-#             }
+Holidays = {
+    (1, 16): "Martin Luther King Day",
+    (2, 20): "President's Day",
+    (2, 27): "Spring Break",
+    (2, 28): "Spring Break",
+    (3, 1): "Spring Break",
+    (3, 2): "Spring Break",
+    (3, 3): "Spring Break",
+    (3, 28): "Festival of Excellence",
+}
 # Format is ['title', 'chapter', length] for topics
 # Format is ['Exam #'] for midterm exams
 
@@ -85,7 +86,7 @@ Topics = [
     # ['Midterm Exam 4 (Ch. 8--10)'],
     ["Nuclear Chemistry", "11.1--11.5", 0.75],
     ["Nuclear Chemistry and Radiation", "11.6--11.11", 0.75],
-    # ['Review/Make-up Day'],
+    ["Catch-up/Review Day - Final Exam"],
 ]
 
 Day_Letters = ["M", "T", "W", "R", "F", "S", "S"]
