@@ -897,7 +897,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 
 \section{Exothermic and Endothermic Reactions}
 \begin{itemize}
-	\item Practice an exothermic reaction: \ch{CH4(g) + 2 O2(g) -> CO2(g) + 2 H2O(l)} \hspace{1em} $\Delta H_{rxn}=-213\dfrac{kcal}{mol}$
+	\item Practice an exothermic reaction: \ch{CH4(g) + 2 O2(g) -> CO2(g) + 2 H2O(l)} \hspace{1em} $\Delta H_{rxn}=-196\dfrac{kcal}{mol}$
 	\item Practice an endothermic reaction: \ch{N2(g) + O2(g) -> 2 NO(g)} \hspace{1em} $\Delta H_{rxn}=43\dfrac{kcal}{mol}$
 	\item Note that these quantities are -per mole. Table 7.2 compares combustion enthalpies on a -per gram basis
 \end{itemize}
@@ -912,6 +912,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item Entropy and Enthalpy are combined to form ``free energy'' ($\Delta G_{rxn}$), which can be thought of as a measure of the spontaneity of a reaction
 	\item $\Delta G_{rxn} = \Delta H_{rxn} - T\Delta S_{rxn}$
 	\item $\Delta H_{rxn}<0$ and $\Delta S_{rxn}>0$ both trend toward spontaneity -- Draw the quadrant diagram
+  \item When is the following spontaneous? \ch{3 H2(g) + N2(g) <=> 2 NH3(g)} \hspace{1em} $\Delta H_{rxn}=-92\nicefrac{kJ}{mol}$
 \end{itemize}
 
 \section{How do Chemical Reactions Occur? Reaction Rates}
@@ -928,7 +929,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 \begin{itemize}
   \item 7.28 -- Reaction enthalpies from bonds
   \item 7.32 -- Predicting entropy changes
-  \item 7.21 -- Reaction coordinate diagrams
+  \item 7.38 -- Temperature and spontaneity
 \end{itemize}
 
 \section{Effects of Temperature, Concentration, and Catalysts on Reaction Rates}
@@ -950,6 +951,13 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	      \end{itemize}
 \end{itemize}
 
+\section*{Homework 7.2:}
+\begin{itemize}
+  \item 7.21 -- Reaction coordinate diagrams
+  \item 7.44 -- Concentration and reaction rates
+  \item 7.46 -- Catalysts and activation energy
+\end{itemize}
+
 \section{Reversible Reactions and Chemical Equilibrium}
 \begin{itemize}
 	\item Some chemical reactions can go in the forward or reverse direction dependig on the circumstances
@@ -964,6 +972,11 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item The exponents in $K_{eq}$ are from the coefficients in the balanced chemical equation
 	\item We can therefore find the equilbrium constant if we measure the equilibrium amounts of reactants and products
 	\item We could also find the equilbrium amount of one species if we know $K_{eq}$ and the concentrations of all other species
+  \item Consider the reaction \ch{H2C2O4(aq) + 2 H2O(l) <=> 2 H3O^{+}(aq) + C2O4^{2-}(aq)}
+
+    Find $K_{eq}$ if $[\ch{H2C2O4}]=0.250M$, $[\ch{H3O^+}]=1.0\times10^{-3}M$, and $[\ch{C2O4^{2-}}]=0.750M$ \hspace{1em} ($2.9\times10^{-6}$)
+
+    Find $[\ch{H3O^+}]$ if $[\ch{H2C2O4}]=0.050M$ and $[\ch{C2O4^{2-}}]=1.50M$ \hspace{1em} ($3.1\times10^{-14}$)
 	\item The value of $K_{eq}$ can indicate whether thee are more products or reactants at equilibrium
 	\item $K_{eq}>1$ favors products, while $K_{eq}<1$ favors reactants
 \end{itemize}
@@ -993,9 +1006,8 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	      \end{itemize}
 \end{itemize}
 
-\section*{Homework 7.2:}
+\section*{Homework 7.3:}
 \begin{itemize}
-  \item 7.46 -- Catalysts and activation energy
   \item 7.54 -- Equilibrium expressions and $K_{eq}$
   \item 7.56 -- Finding equilibrium concentrations
   \item 7.66 -- LeCh\^atelier's principle
@@ -1010,6 +1022,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item Phase change temperatures can be understood in the context of: $\Delta G = \Delta H - T\Delta S$
 	\item Sublimation and dry ice
 \end{itemize}
+
 \section{Intermolecular Forces}
 \begin{itemize}
 	\item Intermolecular forces determine the physical phase of a substance
@@ -1033,6 +1046,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 		      \item Acetone is a counter-example. It has O and H, but not bound together
 	      \end{itemize}
 \end{itemize}
+
 \section{Gases and the Kinetic-Molecular Theory}
 \begin{itemize}
 	\item Gas behavior can be mostly explained by assuming that the individual gas molecules follow these assumptions:
@@ -1045,6 +1059,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	      \end{itemize}
 	\item Real gases deviate slightly from these assumptions, but we can ignore those deviations and treat them like an \emph{ideal gas}
 \end{itemize}
+
 \section{Pressure}
 \begin{itemize}
 	\item Pressure is the force a gas applies over an area
@@ -1052,6 +1067,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item We measure ambient pressure using a mercury barometer -- Figure 8.9
 	\item Pressure can be measured in many different units: $1atm=760mmHg=760torr=14.7psi=101325Pa$
 \end{itemize}
+
 \section{Boyle's Law}
 \begin{itemize}
 	\item Early physicists experimented with the fundamental state variables of gases ($P$, $V$, and $T$) and noticed simple relationships called gas laws
@@ -1060,25 +1076,29 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item The pressure increases with decreased volume, which is consistent with the kinetic molecular theory of gases because there are more molecular collisions per second in the smaller volume
 	\item Solve Boyle's law problems by relating the initial and final conditions: $P_1V_1=P_2V_2$
 \end{itemize}
+
 \section{Charles's Law}
 \begin{itemize}
 	\item Charles's law relates the volume of a gas to temperature: $V\propto T$
 	\item Demo a small balloon expanding as it moves from ice to boiling water
 	\item This behavior is explained by the kinetic molecular theory of gases because the collisions are more forceful, pushing to greater volumes
 	\item Solve Charles's law problems with the following relation: $\dfrac{V_1}{T_1}=\dfrac{V_2}{T_2}$
-	\item Homework 8.1:
-	      \begin{itemize}
-		      \item 8.34 -- Intermolecular forces
-		      \item 8.42 -- Converting gas pressures
-		      \item 8.48 -- Boyle's Law
-		      \item 8.56 -- Charles's Law
-	      \end{itemize}
 \end{itemize}
+
+\section*{Homework 8.1:}
+\begin{itemize}
+  \item 8.34 -- Intermolecular forces
+  \item 8.42 -- Converting gas pressures
+  \item 8.48 -- Boyle's Law
+  \item 8.56 -- Charles's Law
+\end{itemize}
+
 \section{Gay-Lussac's Law}
 \begin{itemize}
 	\item Gay-Lussac's law provides the last relation: $P\propto T$
 	\item This law is redundant, since the previous two laws could be combined to prove the Gay-Lussac law
 \end{itemize}
+
 \section{The Combined Gas Law}
 \begin{itemize}
 	\item Boyle's law, Charles's law, and the Gay-Lussac law all focus on the relationship between two state variables while keeping the third constant
@@ -1088,6 +1108,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item Solve these problems with the following relation: $\dfrac{P_1V_1}{T_1}=\dfrac{P_2V_2}{T_2}$
 	\item This law includes all the others, so it is really the only one that you need to know, except for the even better law we will teach you next class
 \end{itemize}
+
 \section{Avogadro's Law}
 \begin{itemize}
 	\item All of the above laws are for a constant (and unknown) number of moles of gas
@@ -1095,6 +1116,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item It is convenient to define a standard temperature ($0^\circ C$) and pressure ($1atm$) or comparing different gas systems
 	\item At STP, one mole of an ideal gas occupies a standard molar volume of $22.4L$
 \end{itemize}
+
 \section{The Ideal Gas Law}
 \begin{itemize}
 	\item The ideal gas law combines everything we have covered so far: $PV=nRT$
@@ -1104,19 +1126,22 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item Find the pressure when $0.250mol$ of gas are placed in a $5.20L$ container at $15.0^\circ C$ ($1.14atm$)
 	\item How many moles are in a $3.15L$ helium balloon at $20.0^\circ C$ and $0.820atm$? ($0.107mol$)
 \end{itemize}
+
 \section{Partial Pressures and Dalton's Law}
 \begin{itemize}
 	\item Since gas particles don't interact at all, a mixture of gases doesn't introduce any new complexity
 	\item Each gas exerts a partial pressure as if the other gases weren't there, and the total pressure is the sum of the partial pressures
 	\item $P_{total} = \sum P_{i, partial}$
 	\item The air is mostly made of \ch{O2} and \ch{N2}. In Cedar City, $P_{\ch{O2}}=0.17atm$ and $P_{\ch{N2}}=0.64atm$. What is the total barometric pressure? ($0.81atm$)
-	\item Homework 8.2:
-	      \begin{itemize}
-		      \item 8.62 -- Ideal gas law
-		      \item 8.82 -- Ideal gas law
-		      \item 8.88 -- Dalton's law of partial pressures
-	      \end{itemize}
 \end{itemize}
+
+\section*{Homework 8.2:}
+\begin{itemize}
+  \item 8.62 -- Ideal gas law
+  \item 8.82 -- Ideal gas law
+  \item 8.88 -- Dalton's law of partial pressures
+\end{itemize}
+
 \section{Liquids}
 \begin{itemize}
 	\item A liquid in a closed container will reach equilibrium with the vapor phase as vaporization and condensation rates come into balance (Figure 8.19)
@@ -1127,12 +1152,14 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item Viscosity is a measure of how freely a liquid flows. Some liquids, like honey, are very viscous
 	\item Surface Tension is the resistance of a liquid to spreading out and increasing its surface area. This leads to curved droplets of liquids, since this shape minimizes surface area (Figure 8.21)
 \end{itemize}
-\section{Water: A Unique Liquid}
+
+\section*{Water: A Unique Liquid}
 \begin{itemize}
 	\item Water has many unique properties compared to other liquids
 	\item Water has an unusually high heat capacity and enthalpy of vaporization due to its strong hydrogen-bonding intermolecular forces
 	\item Water is nearly unique in having a solid phase which is less dense than the liquid phase. This is because ice has an unusually open crystal structure (Figure 8.23)
 \end{itemize}
+
 \section{Solids}
 \begin{itemize}
 	\item Many solids exhibit an ordered structure over long ranges. These are called crystalline solids
@@ -1146,6 +1173,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item Amorphous solids, like glass, show no long-range structure. They are formed when liquids cool too quickly for a proper lattice to form
 	\item Amorphous solids slowly grow softer over a wide temperature range, rather than melting sharply at a single melting temperature
 \end{itemize}
+
 \section{Changes of State}
 \begin{itemize}
 	\item When a substance undergoes a phase change, it will either give off or take in heat without changing the temperature
@@ -1156,12 +1184,13 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item $7.5g$ of ice begin at $-6.00^\circ C$. Find how many $J$ are required to convert this ice into steam at $125^\circ C$ ($23,000J$)
 
 	      For water: $C_{s}=2.11\dfrac{J}{g~^\circ C}$ \hspace{1em} $C_{l}=4.18\dfrac{J}{g~^\circ C}$ \hspace{1em} $C_{g}=2.00\dfrac{J}{g~^\circ C}$ \\ \hphantom{For Water:} $\Delta H_{fus} = 334\dfrac{J}{g}$ \hspace{1em} $\Delta H_{vap} = 2260\dfrac{J}{g}$
-	\item Homework 8.3
-	      \begin{itemize}
-		      \item 8.92 -- Pressure and boiling points
-		      \item 8.96 -- Amorphous and crystalline solids
-		      \item 8.98 -- Enthalpy of fusion problem
-	      \end{itemize}
+\end{itemize}
+
+\section*{Homework 8.3:}
+\begin{itemize}
+  \item 8.92 -- Pressure and boiling points
+  \item 8.96 -- Amorphous and crystalline solids
+  \item 8.98 -- Enthalpy of fusion problem
 \end{itemize}
 
 \chapter{Solutions}
@@ -1172,6 +1201,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item In a solution, the solvent is the dominant component while any minority components are solutes
 	\item Solutions can be more than just solid-in-liquid -- Table 9.2
 \end{itemize}
+
 \section{The Solvation Process}
 \begin{itemize}
 	\item In solvation, solute-solute interactions and solvent-solvent interactions are replaced by solute-solvent interactions
@@ -1185,11 +1215,13 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item The solvent will form a solvation sphere around the solute
 	\item The net result can be exothermic or endothermic
 \end{itemize}
-\section{Solid Hydrates}
+
+\section*{Solid Hydrates}
 \begin{itemize}
 	\item Some ionic compounds will naturally incorporate water molecules in their ionic lattice
 	\item These compounds are called ``hygroscopic,'' and are written with a dot like this: \ch{CaSO4}$\cdot \dfrac{1}{2}$ \ch{H2O}
 \end{itemize}
+
 \section{Solubility}
 \begin{itemize}
 	\item Solubility is the amount of one substance that you can dissolve in another substance
@@ -1197,6 +1229,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item If a solution has dissolved as much of a solid as it can, then it is called ``saturated''
 	\item A saturated solution can be identified if excess solute remains undissolved
 \end{itemize}
+
 \section{Temperature Dependence of Solubility}
 \begin{itemize}
 	\item Increasing the temperature will increase the solubility of most, but not all solids
@@ -1204,11 +1237,13 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item A solution can be heated to dissolve more solute, then cooled to form a supersaturated solution
 	\item Solute can be spontaneously precipitated from a supersaturated solution -- Demo with sodium acetate
 \end{itemize}
+
 \section{Pressure Dependence of Solubility}
 \begin{itemize}
 	\item Pressure will affect the solubility of gases in liquids
 	\item The solubility is proportional to the gas pressure, according to Henry's Law
 \end{itemize}
+
 \section{Units of Concentration}
 \begin{itemize}
 	\item There are several different units used by chemists to describe concentration
@@ -1218,14 +1253,16 @@ Some chemical reactions can be balanced, but meaningless because they will never
 		      \item volume/volume percent -- volume of solute
 		      \item mass/volume percent -- mass of solute volume of solution
 	      \end{itemize}
-	\item Homework 9.1:
-	      \begin{itemize}
-		      \item 9.38 -- Water as a solvent
-		      \item 9.42 -- Henry's law
-		      \item 9.44 -- Saturation and solubility
-		      \item 9.50 -- Preparing a solution of \ch{NaCl}
-	      \end{itemize}
 \end{itemize}
+
+\section*{Homework 9.1:} % TODO: Check these and all following questions
+\begin{itemize}
+  \item 9.38 -- Water as a solvent
+  \item 9.42 -- Henry's law
+  \item 9.44 -- Saturation and solubility
+  \item 9.50 -- Preparing a solution of \ch{NaCl}
+\end{itemize}
+
 \section{Dilution}
 \begin{itemize}
 	\item Dilution is when additional solvent is added to reduce the concentration of all solutes
@@ -1233,6 +1270,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item $C_1V_1=C_2V_2$ in general, or $M_1V_1=M_2V_2$ for molar concentrations
 	\item $\dfrac{V_1}{V_2}$ is the dilution factor
 \end{itemize}
+
 \section{Ions in Solution: Electrolytes}
 \begin{itemize}
 	\item Substances which produce ions when dissolved in solutions are called electrolytes
@@ -1244,7 +1282,8 @@ Some chemical reactions can be balanced, but meaningless because they will never
 		      \item Non-electrolytes produce no ions
 	      \end{itemize}
 \end{itemize}
-\section{Electrolytes in Biology}
+
+\section*{Electrolytes in Biology}
 \begin{itemize}
 	\item In our biochemistry, there are often many different ions in solution
 	\item To talk about the concentration of complex solutions, we use two new units:
@@ -1254,6 +1293,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	      \end{itemize}
 	\item More realistic concentrations are milliequivalents
 \end{itemize}
+
 \section{Properties of Solutions}
 \begin{itemize}
 	\item Some properties of solutions depend on the concentration but not the identity of the solute
@@ -1262,6 +1302,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item Boiling Point Elevation -- $\Delta T_b = \kappa_b C_{molal}$
 	\item Freezing Point Depression -- $\Delta T_f = \kappa_f C_{molal}$
 \end{itemize}
+
 \section{Osmosis and Osmotic Pressure}
 \begin{itemize}
 	\item Osmotic pressure is another important colligative property
@@ -1269,26 +1310,31 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item Isotonic solutions match the salinity of blood cells
 	\item hypertonic solutions are more salty and will shrivel blood cells
 	\item hypotonic solutions are less salty and will swell (or lyse) blood cells
-	\item Homework 9.2:
-	      \begin{itemize}
-		      \item 9.68 -- Dilution
-		      \item 9.74 -- milliequivalents
-		      \item 9.82 -- Freezing point depression
-		      \item 9.86 -- Osmolarity
-	      \end{itemize}
 \end{itemize}
 
-\chapter{Acids and Bases}
+\section{Dialysis} % TODO: This section is new
+
+\section*{Homework 9.2:}
+\begin{itemize}
+  \item 9.68 -- Dilution
+  \item 9.74 -- milliequivalents
+  \item 9.82 -- Freezing point depression
+  \item 9.86 -- Osmolarity
+\end{itemize}
+
+\chapter{Acids and Bases} %TODO: It looks like a lot of restructuring in this chapter. Do a full run-through
 \section{Acids and Bases in Aqueous Solution}
 \begin{itemize}
 	\item Acid and base activity is mostly defined in the context of an aqueous solution
 	\item An acid will react with water to produce hydronium ions
 	\item A base will react with water to produce hydroxide ions
 \end{itemize}
+
 \section{Some Common Acids and Bases}
 \begin{itemize}
 	\item Acids and bases are common in products around us. Page 292 lists a few
 \end{itemize}
+
 \section{The Br\o nsted-Lowry Definition of Acids and Bases}
 \begin{itemize}
 	\item There are several different definitions used for acids and bases, we will be using the Br\o nsted-Lowry definition:
@@ -1301,6 +1347,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item Multiprotic acids can donate more than one hydrogen
 	\item Every acid has a conjugate base, and every base has a conjugate acid -- They make up a conjugate pair
 \end{itemize}
+
 \section{Acid and Base Strength}
 \begin{itemize}
 	\item Strong acids and bases will dissociate into \ch{H^+} or \ch{OH^-} completely (and are strong electrolytes)
@@ -1309,6 +1356,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item Table 10.1 shows conjugate pairs over a range of acid and base strengths
 	\item Acid-base reactions are equilibrium reactions, and the relative strengths determine whether the reaction is reactant or product favored
 \end{itemize}
+
 \section{Acid Dissociation Constants}
 \begin{itemize}
 	\item The strength of an acid is quantified by the acid dissociation constant $K_a$
@@ -1317,6 +1365,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item Multiprotic acids will have a seperate constant for each stage of dissociation
 	\item Table 10.2 Gives the $K_a$ values for several common acids
 \end{itemize}
+
 \section{Water as Both an Acid and a Base}
 \begin{itemize}
 	\item Water acts as a base when reacting with an acid, and acts as an acid when reacting with a base
@@ -1333,6 +1382,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 		      \item 10.56 -- $K_w$
 	      \end{itemize}
 \end{itemize}
+
 \section{Measuring Acidity: pH}
 \begin{itemize}
 	\item pH is a way to quantify the acidity of a solution
@@ -1342,12 +1392,14 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item We can also define a pOH: $pOH=-\log_{10}[\ch{OH^-}]$
 	\item With these definitions we can convert $K_w=[\ch{H3O^+}][\ch{OH^-}]$ into $14=pH+pOH$
 \end{itemize}
+
 \section{Working with pH}
 \begin{itemize}
 	\item We find pH by taking the negative log of the hydronium concentration
 	\item We can find the hydronium concentration by taking ten to the power of -pH
 	\item Draw my box of conversions
 \end{itemize}
+
 \section{Laboratory Determination of Acidity}
 \begin{itemize}
 	\item One simple way to measure acidity is with a color indicator (Figure 10.3)
@@ -1355,6 +1407,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item Indicators are chemicals that change color based on the acidity of their environment
 	\item More accurate measurements can be made electronically using a pH meter
 \end{itemize}
+
 \section{Buffer Solutions}
 \begin{itemize}
 	\item Pure water will rapidly change pH if any acid or base is added
@@ -1366,6 +1419,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item $pH=pK_a + \log_{10}\left(\dfrac{[\ch{A^-}]}{\ch{[HA]}}\right)$
 	\item Our own bodies are regulated by buffer systems (carbonic acid and dihydrogen phosphate, among others)
 \end{itemize}
+
 \section{Acid and Base Equivalents}
 \begin{itemize}
 	\item Just like with ion equivalents, it is often convenient to talk about acids and bases in terms of how many moles of \ch{H3O^+} of \ch{OH^-} they will produce
@@ -1375,7 +1429,9 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item What we really want is the number of equivalents in a solution. This is called the \emph{Normal Concentration} (N)
 	\item $N=\dfrac{eq}{L}$
 \end{itemize}
+
 \section{Some Common Acid-Base Reactions}
+
 \section{Titration}
 \begin{itemize}
 	\item Titration is a technique used to determine the concentration of acids and bases
@@ -1385,6 +1441,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item The equivalence point can be identified by a color indicator, since the pH swings rapidly once the neutralization has occurred
 	\item $N_1V_1=N_2V_2$ -- This looks just like the dilution equation because it is based on the same assumption: That the number of moles is the same
 \end{itemize}
+
 \section{Acidity and Basicity of Salt Solutions}
 \begin{itemize}
 	\item When a salt dissolves, the cation and anion dissociate and are free to react with water
@@ -1404,6 +1461,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 		      \item 10.90 -- Titration
 	      \end{itemize}
 \end{itemize}
+
 \chapter{Nuclear Chemistry}
 \section{Nuclear Reactions}
 \begin{itemize}
@@ -1413,6 +1471,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	      \ch{^{14}_6C -> ^{14}_7N + ^0_{-1}e^{-}}
 	\item In the reaction above, \ch{^0_{-1}e^{-}} (simply an electron) does not really have an atomic number, but the \ch{_{-1}} is useful for balancing reactions
 \end{itemize}
+
 \section{The Discovery and Nature of Radioactivity}
 \begin{itemize}
 	\item Radioactivity was first observed in 1896 when photosensitive paper stored under a Uranium sample was exposed despite being kept in the dark
@@ -1420,12 +1479,14 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item Figure 11.1 shows how different types of radiation respond to an electric field
 	\item Table 11.1 shows the physical properties of different types of radiation
 \end{itemize}
+
 \section{Stable and Unstable Isotopes}
 \begin{itemize}
 	\item Radioactivity comes from unstable nuclei
 	\item Some unstable nuclei are naturally occurring (\ch{U}), while others \ch{(Pu)} are generated artificially
 	\item Figure 11.2 shows the ``belt of stability''
 \end{itemize}
+
 \section{Nuclear Decay}
 \begin{itemize}
 	\item Alpha Emission -- Figure 11.3
@@ -1448,6 +1509,7 @@ Some chemical reactions can be balanced, but meaningless because they will never
 
 	      \ch{^{197}_{80}Hg + ^0_{-1}e^- -> ^{197}_{79}Au}
 \end{itemize}
+
 \section{Radioactive Half-Life}
 \begin{itemize}
 	\item The half-life is the time required for half of a radioactive sample to decay
@@ -1455,19 +1517,23 @@ Some chemical reactions can be balanced, but meaningless because they will never
 	\item $Fraction~Remaining = \left(0.5\right)^{n}$
 	\item Table 11.3 shows the half-lives and uses for common radioisotopes
 \end{itemize}
-\section{Radioactive Decay Series}
+
+\section*{Radioactive Decay Series}
 \begin{itemize}
 	\item Radioisotopes often decay into other radioisotopes, creating a cascade of different reactions
 	\item Figure 11.5 shows the Uranium radioactive decay series
 \end{itemize}
+
 \section{Ionizing Radiation}
 \begin{itemize}
 	\item Radioactive products are most damaging when they eject electrons off of other materials
 	\item Table 11.4 shows the penetrating distance of different types of ionizing radiation
 \end{itemize}
-\section{Detecting Radiation}
-\section{Measuring Radiation}
+
+\section{Detecting and Measuring Radiation}
+
 \section{Artificial Transmutation}
+
 \section{Nuclear Fission and Nuclear Fusion}
 \begin{itemize}
 	\item Fission and fusion both release tremendous amounts of energy, which manifest as lost mass according to $E=mc^2$
