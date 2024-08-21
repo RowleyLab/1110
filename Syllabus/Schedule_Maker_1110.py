@@ -1,13 +1,13 @@
-n# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 
 import calendar
 import numpy as np
 
 #  Change these values to generate a new course schedule
-year = 2023
+year = 2024
 # Format is [month, day]
-start = [8, 30]
-end = [12, 8]
+start = [8, 28]
+end = [12, 6]
 
 # 0-M, 1-T, 2-W, 3-R, 4-F, 5-S, 6-S
 Days = [0, 2, 4]
@@ -15,14 +15,14 @@ Days = [0, 2, 4]
 # Format is (month, day): 'Holiday Name'
 # Fall Holidays
 Holidays = {
-     (9, 4): "Labor Day",
-     (10, 16): "Fall Break",
-     (10, 17): "Fall Break",
-     (11, 20): "Thanksgiving Break",
-     (11, 21): "Thanksgiving Break",
-     (11, 22): "Thanksgiving Break",
-     (11, 23): "Thanksgiving Break",
-     (11, 24): "Thanksgiving Break",
+     (9, 2): "Labor Day",
+     (10, 14): "Fall Break",
+     (10, 15): "Fall Break",
+     (11, 25): "Thanksgiving Break",
+     (11, 26): "Thanksgiving Break",
+     (11, 27): "Thanksgiving Break",
+     (11, 28): "Thanksgiving Break",
+     (11, 29): "Thanksgiving Break",
  }
 # Summer Holidays
 # Holidays = {(7, 3): '\\nth{4} July',
@@ -51,7 +51,7 @@ Topics = [
     ["Atoms, Elements, and Isotopes", "2.1--2.3", 1],
     ["Atomic Weight, Periodic Table, and Atomic Structure", "2.4--2.6", 0.75],
     ["Electron Configuration", "2.7--2.9", 0.75],
-    ["Catch-up/Review Day - Midterm Exam 1 (Ch. 1--2)"],
+    ["Catch-up/Review Day - Exam 1 (Ch. 1--2)"],
     # ['Midterm Exam 1 (Ch. 1--2)'],
     ["Monoatomic Ions", "3.1--3.4", 1.00],
     ["Polyatomic Ions", "3.5--3.7", 0.75],
@@ -60,7 +60,7 @@ Topics = [
     ["Covalent Bonds and Molecules", "4.4--4.7", 0.75],
     ["Molecular Structure", "4.8--4.9", 0.75],
     ["Polarity and Binary Molecular Compounds", "4.10--4.11", 0.75],
-    ["Catch-up/Review Day - Midterm Exam 2 (Ch. 3--4)"],
+    ["Catch-up/Review Day - Exam 2 (Ch. 3--4)"],
     # ['Midterm Exam 2 (Ch. 3--4)'],
     ["Balancing Chemical Reactions", "5.1--5.2", 0.75],
     ["Solubility and Acid/Base Reactions", "5.3--5.4", 0.75],
@@ -70,7 +70,7 @@ Topics = [
     ["Chemical Reactions: Energy and Rates", "7.1--7.3", 0.75],
     ["Chemical Reactions: Equilibrium", "7.4--7.6", 0.75],
     ["Equilibrium Equations", "7.7--7.9", 1],
-    ["Catch-up/Review Day - Midterm Exam 3 (Ch. 5--7)"],
+    ["Catch-up/Review Day - Exam 3 (Ch. 5--7)"],
     # ['Midterm Exam 3 (Ch. 5--7)'],
     ["Gases and Kinetic Molecular Theory", "8.1--8.3", 0.75],
     ["Pressure and Gas Laws", "8.4--8.7", 0.75],
@@ -82,7 +82,7 @@ Topics = [
     ["Acids and Bases", "10.1--10.2", 1],
     ["Acids and Bases -- Calculations", "10.3--10.8", 1],
     ["Buffers and Titrations", "10.9--10.11", 1],
-    ["Catch-up/Review Day - Midterm Exam 4 (Ch. 8--10)"],
+    ["Catch-up/Review Day - Exam 4 (Ch. 8--10)"],
     # ['Midterm Exam 4 (Ch. 8--10)'],
     ["Nuclear Chemistry", "11.1--11.5", 0.75],
     ["Nuclear Chemistry and Radiation", "11.6--11.9", 0.75],
