@@ -4,10 +4,10 @@ import calendar
 import numpy as np
 
 #  Change these values to generate a new course schedule
-year = 2024
+year = 2025
 # Format is [month, day]
-start = [8, 28]
-end = [12, 6]
+start = [8, 27]
+end = [12, 7]
 
 # 0-M, 1-T, 2-W, 3-R, 4-F, 5-S, 6-S
 Days = [0, 2, 4]
@@ -15,14 +15,14 @@ Days = [0, 2, 4]
 # Format is (month, day): 'Holiday Name'
 # Fall Holidays
 Holidays = {
-     (9, 2): "Labor Day",
+     (9, 1): "Labor Day",
+     (10, 13): "Fall Break",
      (10, 14): "Fall Break",
-     (10, 15): "Fall Break",
+     (11, 24): "Thanksgiving Break",
      (11, 25): "Thanksgiving Break",
      (11, 26): "Thanksgiving Break",
      (11, 27): "Thanksgiving Break",
      (11, 28): "Thanksgiving Break",
-     (11, 29): "Thanksgiving Break",
  }
 # Summer Holidays
 # Holidays = {(7, 3): '\\nth{4} July',
